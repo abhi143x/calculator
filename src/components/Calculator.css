@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .calculator {
+    background: #1e1e1e; /* Calculator background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 300px;
+  }
+  
+  .display {
+    background: #000; /* Black display background */
+    color: #0f0; /* Bright green text */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 1.5rem;
+    height: 50px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #333333; /* Default button background */
+    color: #ffffff; /* Default button text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Button shadow */
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: #444444; /* Slightly lighter hover */
+  }
+  
+  button:active {
+    transform: scale(0.95); /* Press effect */
+  }
+  
+  button.clear,
+  button.backspace {
+    background: #d9534f; /* Red buttons for C and Backspace */
+  }
+  
+  button.clear:hover,
+  button.backspace:hover {
+    background: #c9302c; /* Darker red hover */
+  }
+  
+  button.operator {
+    background: #f0ad4e; /* Orange operational buttons */
+    color: #fff;
+  }
+  
+  button.operator:hover {
+    background: #ec971f; /* Darker orange on hover */
+  }
+  
+  button.equals {
+    grid-column: span 2;
+    background: #4caf50; /* Green for equals button */
+    color: white;
+  }
+  
+  button.equals:hover {
+    background: #45a049; /* Darker green hover */
+  }
+  
